@@ -1,0 +1,94 @@
+// .product-container {
+//     display: flex;
+//     flex-direction: column;
+//     height: 80%;
+//     margin: 16px 10%;
+//     background-color: white;
+//     border-radius: 24px;
+//     color: black;
+//     .header {
+//         display: flex;
+//         border-bottom: 2px solid black;
+//         div {
+//             padding: 16px;
+//             cursor: pointer;
+//         }
+//     }
+//     .selected {
+//         border-bottom: 2px solid black;
+//     }
+// }
+
+.product-container {
+    background-image: url("../../../assets/bike-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after {
+        content: "";
+        position: absolute;
+        width: calc(100% - 100px);
+        height: calc(100% - 100px);
+        background: inherit;
+        filter: blur(10px);
+    }
+    .product-box {
+        height: calc(100% - 100px);
+        width: calc(100% - 100px);
+        box-sizing: border-box;
+        padding: 32px;
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        justify-content: space-evenly;
+        gap: 24px 1px;
+        .shop-item {
+            display: contents;
+        }
+    }
+    .back-btn {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        z-index: 2;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #000000;
+}
+::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 100px;
+}
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

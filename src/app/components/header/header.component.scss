@@ -1,0 +1,23 @@
+.header {
+    // background-color: #222728;
+    background-color: #16191a;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+    }
+    span {
+        font-size: 28px;
+        color: white;
+        font-weight: bold;
+        span {
+            background-color: red;
+            padding: 4px;
+            border-radius: 6px;
+            color: black;
+            margin-left: 4px;
+        }
+    }
+}

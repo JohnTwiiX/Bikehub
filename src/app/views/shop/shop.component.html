@@ -1,0 +1,34 @@
+<div class="product-container">
+    <app-back-button class="back-btn"></app-back-button>
+    <div class="product-box">
+        @for(item of items; track item){
+        <app-product-card [item]="item" class="shop-item"></app-product-card>
+        }
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="header">
+        <div (click)="selectTab('All')"><span [ngClass]="{'selected' : selectedTab === 'All'}">All</span></div>
+        <div (click)="selectTab('Hoodies')"><span [ngClass]="{'selected' : selectedTab === 'Hoodies'}">Hoodies</span>
+        </div>
+        <div (click)="selectTab('Hosen')"><span [ngClass]="{'selected' : selectedTab === 'Hosen'}">Hosen</span></div>
+    </div>
+    <div class="products">
+        <app-product-card></app-product-card>
+    </div> -->

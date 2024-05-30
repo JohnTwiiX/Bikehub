@@ -1,0 +1,39 @@
+<div class="homepage">
+    <div class="image-container">
+        <img src="assets/bike-bg.jpg" alt="">
+        <div class="shadow"></div>
+    </div>
+
+    <h1>Willkommen bei {{title}}</h1>
+
+    <div class="images">
+        <a routerLink="/shop">
+            <img src="assets/merge.jpg" alt="">
+            <span>Merch</span>
+        </a>
+        <!-- <div (click)="selectShop()">
+            <img src="assets/merge.jpg" alt="">
+            <span>Merch</span>
+        </div> -->
+        <div>
+            <img style="width: 400px;" src="assets/logo.jpg" alt="">
+        </div>
+        <div>
+            <img src="assets/bike2.jpg" alt="">
+        </div>
+    </div>
+    @if(openShop){
+    <app-shop></app-shop>
+    }
+
+    <!-- <div>
+        <app-image-slider></app-image-slider>
+    </div>
+    <div class="shop-link">
+        <a routerLink="/shop">
+            <span>Hier geht es zum Shop </span><mat-icon aria-hidden="false" aria-label="Example home icon"
+                fontIcon="arrow_forward"></mat-icon>
+        </a>
+    </div> -->
+
+</div>

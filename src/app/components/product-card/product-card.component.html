@@ -1,0 +1,7 @@
+<mat-card class="card" (click)="openShopItemDialog()">
+    <img mat-card-image [src]="'/api' + item.images[0].url" [alt]="item.images[0].alt_text">
+    <mat-card-header class="title">
+        <mat-card-title>{{item.name}}</mat-card-title>
+        <mat-card-subtitle>{{item.price}}€</mat-card-subtitle>
+    </mat-card-header>
+</mat-card>

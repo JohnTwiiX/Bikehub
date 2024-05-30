@@ -1,0 +1,11 @@
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 40%;
+        -webkit-box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.7);
+        box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+    }
+}
